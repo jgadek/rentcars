@@ -7,14 +7,23 @@
         <link rel='stylesheet' id='style2' href='css/style.css' type='text/css' media='all' />
 
     </head>
-    <body id="index" onload="draw();">
+    <body id="index" onload="draw(0);">
         <div class="container">
             <header>
                 <h1>HTML5 + JS</h1>
             </header>
+            <section>
+                <h2>Grafik rezerwacji</h2>
+           
+           <div>
+                <button onclick="moveCanvas(this)" data-actual = "0" data-direct ="left" class="canvas-nav" id="canvas-el-to-left">przesuń w lewo</button >
+                <button onclick="moveCanvas(this)" data-actual = "0" data-direct ="center" class="canvas-nav" id="canvas-el-to-center">wyrównaj</button >
+                <button  onclick="moveCanvas(this)"  data-actual = "0" data-direct ="right" class="canvas-nav" id="canvas-el-to-right">przesuń w prawo</button >
+            </div>
             <canvas width="960" height="300" id="canvas">
                 ...Twoja przeglądarka nie wspiera tagu html5 canvas...
             </canvas>
+                 </section>
             <footer id="footer">
             </footer>
         </div>
