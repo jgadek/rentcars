@@ -17,6 +17,7 @@ function draw() {
     rezerwacja(3, context, 150, y, 150, 'Jakub Gądek');
     rezerwacja(3, context, 400, y, 100, 'Jakub Gądek 2');
     rezerwacja(3, context, 600, y, 200, 'Jakub Gądek 3');
+    samochody(context);
 }
 /**
  * 
@@ -45,3 +46,19 @@ function rezerwacja(lvl, context, x, y, l, text) {
     context.stroke();
 }
 
+function samochody(context) {
+    context.beginPath();
+    context.fillStyle = 'grey';
+    context.fillRect(0, 0, 120, 300);
+    context.fillStyle = 'white';
+    context.font = "12px Arial";
+    context.fillText('Lista samochodów:', 10, 20);
+    context.font = "10px Arial";
+    context.fillText('marka samochodu 1', 10, 40);
+    context.fillText('marka samochodu 2', 10, 60);
+    context.fillText('marka samochodu 3', 10, 80);
+    context.fillText('marka samochodu 4', 10, 100);
+    context.fillText('marka samochodu 5', 10, 120);
+    context.stroke();
+
+}
