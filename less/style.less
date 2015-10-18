@@ -1,0 +1,40 @@
+.border-radius(@rad){
+    -webkit-border-radius:@rad;
+    -moz-border-radius: @rad;
+    border-radius: @rad;
+}
+.container{
+    width:960px;
+    margin: 0 auto;
+    .table{
+        display:table;
+        .table-cell{
+            display:table-cell;
+            vertical-align: middle;
+        }
+    }
+    .grid{
+        article{
+            width:50%;
+            .article-content{
+                padding:0 15px;
+                border:1px solid #ccc;
+                .border-radius(5px);
+            }
+
+        }
+    }
+}
+.stars{
+    .star{
+        width:17px; 
+        height:15px; 
+        display:inline-block;
+    }
+    .full-star{
+        background: url(../img/star-full.jpg) no-repeat center;
+    }
+    .empty-star{
+        background: url(../img/star-empty.jpg) no-repeat center;
+    }
+}
